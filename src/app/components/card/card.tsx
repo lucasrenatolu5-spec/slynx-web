@@ -11,7 +11,7 @@ type CardProps = {
 export function Card({ title, href, icon, children }: CardProps) {
   return (
     <a className={styles.card} href={href}>
-      <div className={styles.iconWrapper}>
+      <div>
         <div className={styles.icon}>{icon}</div>
       </div>
       <div className={styles.baixo}>
