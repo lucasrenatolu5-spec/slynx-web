@@ -1,19 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 
-:root {
 
-  --foreground: #171717;
-
-  /* Pallet */
-  --primary-base-color: #00451f;
-  --secondary-base-color: #007334;
-  --brand-color: #00a349;
-  --highlight-color: #00db63;
-  --hover-color: #01ff72;
-
-  --title-color: #000;
-}
 
 .container {
   position: relative;
