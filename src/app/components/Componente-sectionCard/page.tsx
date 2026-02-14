@@ -1,24 +1,22 @@
-'use client'
-import { Card } from './components/card/card'
-import { useState } from 'react';
-import { ArrowRight, Album, Download, SquareTerminal} from 'lucide-react'
 
-export default function Home() {
+import { Card } from '../components/card/card'
+import { Icon as Iconify, IconProps } from "@iconify/react";
+
+export default function Cards() {
     return (
         <>
-        <section>
+        <div>
             <h1>Get started</h1>
             <Card
                 title="Handbrook"
                 href="#"
                 icon={<Album size={60} />}
             >
-                Learn the language <ArrowRight />
             </Card>
             <Card
                 title="Playground"
                 href="#"
-                icon={<SquareTerminal size={60} />}
+                icon={<Iconify { ...props } />}
             >
                 Try in your browser <ArrowRight />
             </Card>
@@ -29,7 +27,7 @@ export default function Home() {
             >
                 Install Slynx <ArrowRight />
             </Card> 
-        </section>
+        </div>
         </>
     )
 }
