@@ -1,31 +1,34 @@
 
-import { Card } from '../components/card/card'
-import { Icon as Iconify, IconProps } from "@iconify/react";
+import { Card } from '@/app/components/card/card'
+import  Icon  from "@/app/components/icon"
 
 export default function Cards() {
     return (
         <>
+            <div>
+                <h1>Get started</h1>
+            </div>
         <div>
-            <h1>Get started</h1>
             <Card
                 title="Handbrook"
                 href="#"
-                icon={<Album size={60} />}
+                icon={<Icon icon='material-symbols:book-outline-rounded'/>}
             >
+                Learn the language <Icon icon='maki:arrow'></Icon>
             </Card>
             <Card
                 title="Playground"
                 href="#"
-                icon={<Iconify { ...props } />}
+                icon={<Icon icon='fe:terminal' />}
             >
-                Try in your browser <ArrowRight />
+                Try in your browser <Icon icon='maki:arrow'></Icon>
             </Card>
             <Card
                 title="Download"
                 href="#"
-                icon={<Download size={60} />}
+                icon={<Icon icon='material-symbols:download' />}
             >
-                Install Slynx <ArrowRight />
+                Install Slynx <Icon icon='maki:arrow'></Icon>
             </Card> 
         </div>
         </>
