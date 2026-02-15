@@ -1,35 +1,9 @@
-'use client'
-import { Card } from './components/card/card'
-import { useState } from 'react';
-import { ArrowRight, Album, Download, SquareTerminal} from 'lucide-react'
+import CardsContainer from "./components/cards-container/cards-container"
 
 export default function Home() {
     return (
         <>
-        <section>
-            <h1>Get started</h1>
-            <Card
-                title="Handbrook"
-                href="#"
-                icon={<Album size={60} />}
-            >
-                Learn the language <ArrowRight />
-            </Card>
-            <Card
-                title="Playground"
-                href="#"
-                icon={<SquareTerminal size={60} />}
-            >
-                Try in your browser <ArrowRight />
-            </Card>
-            <Card
-                title="Download"
-                href="#"
-                icon={<Download size={60} />}
-            >
-                Install Slynx <ArrowRight />
-            </Card> 
-        </section>
+         <CardsContainer /> 
         </>
     )
 }
